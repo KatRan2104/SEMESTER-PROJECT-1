@@ -6,7 +6,7 @@
     flex-direction: column;
     background-image: url(../../assets/img/scott-webb-102825.jpg);
     align-items: center;
-    height: 60vh;
+    min-height: 60vh;
     justify-content: center;
     row-gap: 2em;
     text-align: center;
@@ -34,7 +34,7 @@
 .hero-banner h1 {
     font-size: 4em;
     color: var(--font-color-dark);
-    padding: 0 3em;
+    padding: 5%;
 }
 
 .hero-banner-buttons {
@@ -47,15 +47,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
     row-gap: 0.25em;
     padding: 2.5% 0;
-    border-bottom: 0.25em solid var(--secondary-color);
+    border-bottom: solid 0.15em var(--main-color);
 }
 
-.explore-together h2, p {
+.explore-together h2, .explore-together p {
     font-family: Goldman, sans-serif;
     padding: 0.25rem 2.5%;
-
 }
 
 .explore-together h2 {
@@ -69,6 +69,7 @@
     flex-direction: column;
     align-items: center;
     row-gap: 1em;
+    padding: 2.5% 0;
 }
 
 .opening-hours h3 {
@@ -77,9 +78,10 @@
 }
 
 
-.opening-hours p {
+.opening-hours li {
+    font-family: Quicksand, sans-serif;
     font-size: 1.5em;
-    text-justify: distribute-all-lines;
+    border: none;
 }
 
 .opening-hours ul {
@@ -88,12 +90,19 @@
     align-items: flex-start;
     row-gap: 1em;
 }
+
+#opening-hours-ul li {
+    margin: 0.25em 5%;
+}
+
 .opening-hours-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    column-gap: 10em;
-    /* align-items: flex-end; */
+    column-gap: 5em;
+    padding-right: 2.5%;
+    padding-bottom: 2em;
+    border-bottom: solid 0.15em var(--main-color);
 }
 
 .btn-container-opening-hours {
@@ -106,6 +115,26 @@
     background-repeat: no-repeat;
     align-items: center;
     width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-banner h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-banner-buttons {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    .opening-hours-container {
+        flex-direction: column;
+        column-gap: 0;
+    }
+
+    .btn-container-opening-hours {
+        visibility: hidden;
+    }
 }
 
 /* .opening-hours-image-container {
@@ -125,8 +154,7 @@
     position: relative;
     width: 70%;
     height: 23rem;
-,....,    object-fit: cover;
+    object-fit: cover;
     object-position: 100% 0;
-} */
-
+}
 
