@@ -79,3 +79,9 @@ footer {
 .nav-list > * {
     z-index: 100;
 }
+
+.exhibitions-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4.5em;
+}

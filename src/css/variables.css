@@ -9,3 +9,9 @@
     --font-color-light: #f0f0f0;
     --font-size: calc(1em + 0.25vw);
 }
+
+:root {
+    --ex-img-bg-ai: url("../../assets/img/samuel-zeller-158996.jpg");
+    --ex-img-bg-bm: url("../../assets/img/samuel-zeller-113381.jpg");
+    --ex-img-bg-co: url("../../assets/img/andrew-ruiz-348421.jpg");
+}
