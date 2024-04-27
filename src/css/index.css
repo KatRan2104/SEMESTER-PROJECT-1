@@ -133,10 +133,9 @@
     }
 
     .btn-container-opening-hours {
-        visibility: hidden;
-    }
+        display: none;
 }
-
+}
 /* .opening-hours-image-container {
     display: inline-flex;
     flex-direction: column-reverse;
