@@ -1,4 +1,5 @@
 @import url(variables.css);
+@import url(navbar.css);
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Quicksand:wght@300..700&display=swap');
 
@@ -37,38 +38,11 @@ li {
     margin-bottom: 0.5em;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 100%;
-    background-color: var(--main-color);
-    color: var(--font-color-light);
-    padding: 1em 0.5em 0.5em;
-    font-family: quicksand, sans-serif;
-    font-size: 1em;
-}
+
 
 a {
     color: var(--font-color-light);
     text-decoration: none;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-top: 1em;
-}
-
-.nav-logo {
-    justify-content: flex-start;
-}
-
-.nav-logo img {
-    width: 56px;
-    height: 56px;
 }
 
 .button-yellow, .button-pink {
@@ -96,4 +70,12 @@ footer {
     background-color: var(--footer-bg-color);
     color: var(--font-color-light);
     padding: 2em;
+}
+
+.nav-list::after {
+    z-index: 1;
+}
+
+.nav-list > * {
+    z-index: 100;
 }
