@@ -1,0 +1,92 @@
+@import url(variables.css);
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: Goldman, sans-serif;
+    color: var(--font-color-dark);
+    font-weight: bold;
+}
+
+body {
+    font-family: Quicksand, sans-serif;
+    font-size: var(--font-size);
+}
+
+ul, nav, nav ul {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+li {
+    margin: 0em 2em;
+    margin-bottom: 0.5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    color: var(--font-color-light);
+    width: 100%;
+    padding: 1em 0.5em 0.5em
+}
+
+a {
+    color: var(--font-color-light);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.nav-logo {
+    justify-content: flex-start;
+}
+
+.nav-logo img {
+    width: 56px;
+    height: 56px;
+}
+
+.button-yellow, .button-pink {
+    border: 0.25em solid;
+    color: var(--font-color-dark);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.button-pink {
+    background-color: var(--bg-button-color);
+    border-color: var(--secondary-color);
+}
+
+.button-yellow {
+    background-color: var(--third-color);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--font-color-light);
+    padding: 2em;
+}
