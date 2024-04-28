@@ -1,7 +1,7 @@
 @import url(/src/css/variables.css);
 @import url(/src/css/main.css);
 
-.hero-banner, .young-scientist, .teachers, .researchers {
+.hero-banner, .young-scientist, .teachers-img-container, .researchers {
     display: flex;
     flex-direction: column;
     background-image: url(../../assets/img/scott-webb-102825.jpg);
@@ -12,11 +12,15 @@
     padding-bottom: 1.5em;
 }
 
+.teachers h2{
+    padding: 2rem 5%;
+}
+
 .young-scientist {
     background-image: var(--for-img-bg-ys);
 }
 
-.teachers {
+.teachers-img-container {
     background-image: var(--for-img-bg-t);
 }
 
@@ -24,11 +28,14 @@
     background-image: var(--for-img-bg-r);
 }
 
-.young-scientist, .teachers, .researchers {
+.young-scientist, .teachers-img-container, .researchers {
     background-size: cover;
     padding: 2rem 5%;
     margin-bottom: 5rem;
-    margin-top: 5rem
+    margin-top: 1.25rem;
+    height: 70vh;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .hero-banner::after {
