@@ -66,10 +66,33 @@ a {
     border-color: var(--third-color);
 }
 
-footer {
+.footer-container {
+    font-family: quicksand, sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--footer-bg-color);
     color: var(--font-color-light);
     padding: 2em;
+}
+.footer-container > * {
+    margin: 0 1em;
+}
+
+.left-side-footer {
+    justify-content: flex-start;
+}
+
+.right-side-footer {
+    justify-content: flex-end;
+}
+
+.right-side-footer img {
+    margin-top: 2em;
+    width: 64px;
+    height: 64px;
+
 }
 
 .nav-list::after {

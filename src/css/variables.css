@@ -7,7 +7,7 @@
     --footer-bg-color: #080708;
     --font-color-dark: #080708;
     --font-color-light: #f0f0f0;
-    --font-size: calc(1em + 0.25vw);
+    --font-size: calc(1rem + 0.25vw);
 }
 
 :root {

@@ -31,7 +31,7 @@
 }
 
 .hero-banner h1 {
-    font-size: 4em;
+    font-size: 4rem;
     color: var(--font-color-dark);
     padding: 5%;
 }
@@ -119,9 +119,10 @@
 
 .exhibitions, .news {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
-    row-gap: 1em;
+    gap: 2rem;
     padding: 2rem 5%;
 }
 
@@ -130,34 +131,6 @@
     font-size: 1.5em;
     color: var(--font-color-dark);
 }
-
-/* .exhibitions-container, .news-container {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-
-    background-position: bottom, center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: flex-start;
-} */
-
-/* display: flex;
-flex-direction: column;
-background-image: url("");
-width: 20em;
-height: 19em;
-background-position: bottom, center;
-background-size: cover;
-background-repeat: no-repeat;
-align-items: flex-end;
-flex-wrap: wrap;
-align-content: flex-end;
-justify-content: flex-start; */
-/* background-position: center; */
 
 .ex-img-container h3, .news-img-container h3 {
     font-size: 2.5em;
@@ -238,7 +211,7 @@ justify-content: flex-start; */
 
 #news-energetica {
     background-image: var(--news-img-bg-eel);
-    width: 20em;
+    width: 20rem;
     height: 19em;
     background-position: center;
     background-size: cover;
@@ -287,6 +260,12 @@ justify-content: flex-start; */
     .btn-container-opening-hours {
         display: none;
 }
+
+    /* .exhibitions-container, .news-container{
+    width: 10em;
+    height: 8em;
+    } */
+
 }
 
 /* .opening-hours-image-container {
