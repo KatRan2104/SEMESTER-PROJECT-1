@@ -57,7 +57,7 @@
     padding: 0.25rem 2.5%;
 }
 
-.explore-together h2, .exhibitions h2 {
+.explore-together h2, .exhibitions h2, .news h2 {
     font-size: 2.75em;
     font-weight: bold;
     color: var(--font-color-dark);
@@ -117,7 +117,7 @@
     width: 60%;
 }
 
-.exhibitions {
+.exhibitions, .news {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -125,54 +125,148 @@
     padding: 2rem 5%;
 }
 
-.exhibitions p {
+.exhibitions p, .news p {
     font-family: Goldman, sans-serif;
     font-size: 1.5em;
     color: var(--font-color-dark);
 }
 
-.exhibitions-container {
+/* .exhibitions-container, .news-container {
     display: flex;
     flex-direction: column;
-    background-image: url(../../assets/img/samuel-zeller-158996.jpg);
-    width: 20em;
-    height: 19em;
-    background-position: bottom;
+    align-content: flex-end;
+
+    background-position: bottom, center;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: flex-start;
-    background-position: center;
-    /* background-origin: border-box; */
-}
+} */
 
-#medicine-biology {
-    background-image: var(--ex-img-bg-bm);
-}
+/* display: flex;
+flex-direction: column;
+background-image: url("");
+width: 20em;
+height: 19em;
+background-position: bottom, center;
+background-size: cover;
+background-repeat: no-repeat;
+align-items: flex-end;
+flex-wrap: wrap;
+align-content: flex-end;
+justify-content: flex-start; */
+/* background-position: center; */
 
-.ex-img-container h3 {
+.ex-img-container h3, .news-img-container h3 {
     font-size: 2.5em;
     color: var(--font-color-light);
     padding: 1rem 0.5rem;
 }
-.ex-dropdown {
+.ex-dropdown, .news-dropdown {
     display: flex;
     flex-direction: row;
-    max-width: 60%;
+    max-width: 12rem;
     background-color: var(--main-color);
     color: var(--font-color-light);
 }
 
-.ex-dropdown h4 {
+.ex-dropdown h4, .news-dropdown h4 {
     font-family: Goldman, sans-serif;
     font-size: 1em;
 }
 
-.ex-dropdown h4, .ex-dropdown span {
+.ex-dropdown h4, .ex-dropdown span, .news-dropdown h4, .news-dropdown span {
     color: var(--font-color-light);
     padding: 0.5rem 1rem;
+}
+
+#robotics-ai {
+    background-image: var(--ex-img-bg-ai);
+    background-position: bottom, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+#medicine-biology {
+    background-image: var(--ex-img-bg-bm);
+    background-position: bottom, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+#cosmology {
+    background-image: var(--ex-img-bg-co);
+    background-position: bottom, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+#ecology{
+    background-image: var(--ex-img-bg-ec);
+    background-position: bottom, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+#evolution{
+    background-image: var(--ex-img-bg-ev);
+    background-position: bottom, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+#news-energetica {
+    background-image: var(--news-img-bg-eel);
+    width: 20em;
+    height: 19em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+#news-professor {
+    background-image: var(--news-img-bg-vpa);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 20em;
+    height: 19em;
+}
+
+#news-night-am {
+    background-image: var(--news-img-bg-night);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 20em;
+    height: 19em;
 }
 
 @media screen and (max-width: 767px) {
