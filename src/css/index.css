@@ -177,7 +177,7 @@ justify-content: flex-start; */
     font-size: 1em;
 }
 
-.ex-dropdown h4, .ex-dropdown span, .news-dropdown h4, .news-dropdown span {
+.ex-dropdown h4, .news-dropdown h4, .ex-dropdown span, .news-dropdown span {
     color: var(--font-color-light);
     padding: 0.5rem 1rem;
 }
@@ -243,7 +243,7 @@ justify-content: flex-start; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: flex-end;
+    align-content: flex-end;
     justify-content: flex-start;
 }
 
@@ -252,7 +252,7 @@ justify-content: flex-start; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: flex-end;
+    align-content: flex-end;
     justify-content: flex-start;
     width: 20em;
     height: 19em;
@@ -263,7 +263,7 @@ justify-content: flex-start; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: flex-end;
+    align-content: flex-end;
     justify-content: flex-start;
     width: 20em;
     height: 19em;
