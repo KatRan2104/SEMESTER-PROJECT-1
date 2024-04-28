@@ -71,6 +71,7 @@ a {
     font-weight: 600;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--footer-bg-color);
     color: var(--font-color-light);
@@ -106,7 +107,7 @@ a {
 .exhibitions-container, .news-container {
     display: flex;
     flex-direction: row;
-    column-gap: 4.5em;
+    /* column-gap: 4.5em; */
     background-image: url("");
     width: 20em;
     height: 19em;

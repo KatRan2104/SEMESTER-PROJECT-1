@@ -1,7 +1,7 @@
 @import url(/src/css/variables.css);
 @import url(/src/css/main.css);
 
-.hero-banner {
+.hero-banner, .young-scientist, .teachers, .researchers {
     display: flex;
     flex-direction: column;
     background-image: url(../../assets/img/scott-webb-102825.jpg);
@@ -10,6 +10,25 @@
     text-align: center;
     position: relative;
     padding-bottom: 1.5em;
+}
+
+.young-scientist {
+    background-image: var(--for-img-bg-ys);
+}
+
+.teachers {
+    background-image: var(--for-img-bg-t);
+}
+
+.researchers {
+    background-image: var(--for-img-bg-r);
+}
+
+.young-scientist, .teachers, .researchers {
+    background-size: cover;
+    padding: 2rem 5%;
+    margin-bottom: 5rem;
+    margin-top: 5rem
 }
 
 .hero-banner::after {
@@ -57,7 +76,7 @@
     padding: 0.25rem 2.5%;
 }
 
-.explore-together h2, .exhibitions h2, .news h2 {
+.explore-together h2, .exhibitions h2, .news h2, .young-scientist h2, .teachers h2, .researchers h2 {
     font-size: 2.75em;
     font-weight: bold;
     color: var(--font-color-dark);
@@ -122,8 +141,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem 5%;
+    border-bottom: solid 0.15em var(--main-color);
 }
 
 .exhibitions p, .news p {
@@ -211,7 +231,7 @@
 
 #news-energetica {
     background-image: var(--news-img-bg-eel);
-    width: 20rem;
+    /* width: 20rem; */
     height: 19em;
     background-position: center;
     background-size: cover;
@@ -227,7 +247,7 @@
     background-repeat: no-repeat;
     align-content: flex-end;
     justify-content: flex-start;
-    width: 20em;
+    /* width: 20em; */
     height: 19em;
 }
 
@@ -238,11 +258,23 @@
     background-repeat: no-repeat;
     align-content: flex-end;
     justify-content: flex-start;
-    width: 20em;
+    /* width: 20em; */
     height: 19em;
 }
 
+#young-scientist, #teachers, #researchers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+
+
 @media screen and (max-width: 767px) {
+    .hero-banner {
+    }
+
     .hero-banner h1 {
         font-size: 2.5em;
     }
@@ -255,16 +287,29 @@
     .opening-hours-container {
         flex-direction: column;
         column-gap: 0;
+        padding: 0;
     }
 
     .btn-container-opening-hours {
         display: none;
 }
 
-    /* .exhibitions-container, .news-container{
-    width: 10em;
-    height: 8em;
+    .exhibitions-container {
+        width: 10em;
+        height: 8em;
+        padding: 0;
+    }
+
+    /* #news-professor, #news-night-am, #news-energetica {
+        width: 10em;
+        height: 8em;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-content: flex-end;
+        justify-content: flex-start;
     } */
+
 
 }
 
