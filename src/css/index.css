@@ -247,7 +247,7 @@
     justify-content: flex-start;
 }
 
-#evolution{
+#evolution {
     background-image: var(--ex-img-bg-ev);
     background-position: bottom, center;
     background-size: cover;
@@ -296,11 +296,7 @@
 }
 
 
-
 @media screen and (max-width: 767px) {
-    .hero-banner {
-    }
-
     .hero-banner h1 {
         font-size: 2.5em;
     }

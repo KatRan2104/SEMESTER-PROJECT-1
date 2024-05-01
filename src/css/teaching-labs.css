@@ -1,0 +1,70 @@
+#hero-teaching-lab-banner {
+    background-image: url(../../assets/img/learn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-teaching-lab-banner h1 {
+    color: var(--font-color-light);
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+#hero-teaching-lab-banner::after{
+    content: "";
+    background-color:  rgba(56, 56, 56, 0.44);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+#hero-teaching-lab-banner::after {
+    z-index: 1;
+}
+#hero-teaching-lab-banner::after > * {
+    z-index: 100;
+}
+
+.teaching-labs-main-container {
+    border-bottom: solid 1px var(--font-color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    text-align: flex-start;
+    position: relative;
+    padding-bottom: 1.5em;
+}
+
+.text-teaching-labs, .button-pink-container {
+    padding: 0 5%;
+}
+
+.text-teaching-labs {
+    padding: 3rem 5%;
+}
+
+#opening-hours-teaching-labs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#opening-hours-teaching-labs-button-container {
+    display: flex;
+    flex-direction: column;
+    background-image: var(--teachers-page-img-bg-opening-hours);
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 20rem;
+}
+
+#teaching-labs-main-container h2, p {
+    color: var(--font-color-dark);
+}
