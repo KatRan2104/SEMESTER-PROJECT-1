@@ -1,0 +1,42 @@
+
+#hero-exhibitions-banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../assets/img/exhibition-1863344_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    row-gap: 2em;
+    text-align: center;
+    position: relative;
+}
+
+#hero-exhibitions-banner::after{
+    content: "";
+    background-color:  rgba(56, 56, 56, 0.44);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+#hero-exhibitions-banner::afte {
+    z-index: 1;
+}
+#hero-exhibitions-banner::afte > * {
+    z-index: 50;
+}
+
+#hero-exhibitions-banner h1 {
+    color: var(--font-color-light);
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    #hero-exhibitions-banner {
+        background-position: right;
+    }
+}

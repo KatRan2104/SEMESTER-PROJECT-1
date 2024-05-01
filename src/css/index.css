@@ -1,6 +1,7 @@
 @import url(/src/css/variables.css);
 @import url(/src/css/main.css);
 
+
 .hero-banner, .young-scientist, .teachers-img-container, .researchers {
     display: flex;
     flex-direction: column;
@@ -10,32 +11,6 @@
     text-align: center;
     position: relative;
     padding-bottom: 1.5em;
-}
-
-.teachers h2{
-    padding: 2rem 5%;
-}
-
-.young-scientist {
-    background-image: var(--for-img-bg-ys);
-}
-
-.teachers-img-container {
-    background-image: var(--for-img-bg-t);
-}
-
-.researchers {
-    background-image: var(--for-img-bg-r);
-}
-
-.young-scientist, .teachers-img-container, .researchers {
-    background-size: cover;
-    padding: 2rem 5%;
-    margin-bottom: 5rem;
-    margin-top: 1.25rem;
-    height: 70vh;
-    align-items: center;
-    justify-content: flex-end;
 }
 
 .hero-banner::after {
@@ -68,6 +43,51 @@
     column-gap: 4.5em;
 }
 
+
+#hero-index-banner {
+    background-position: center;
+    background-size: cover;
+}
+
+.young-scientist, .teachers-img-container, .researchers {
+    background-size: cover;
+    padding: 2rem 5%;
+    margin-bottom: 5rem;
+    margin-top: 1.25rem;
+    height: 70vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.young-scientist::after {
+    content: "";
+    background-color:  rgba(42, 39, 39, 0.387);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+.young-scientist::after {
+    z-index: 1;
+}
+.young-scientist > * {
+    z-index: 50;
+}
+
+.young-scientist {
+    background-image: var(--for-img-bg-ys);
+}
+
+.teachers-img-container {
+    background-image: var(--for-img-bg-t);
+}
+
+.researchers {
+    background-image: var(--for-img-bg-r);
+}
+
 .explore-together {
     display: flex;
     flex-direction: column;
@@ -75,7 +95,6 @@
     flex-wrap: wrap;
     row-gap: 0.25em;
     padding: 2rem 5%;
-    /* border-bottom: solid 0.15em var(--main-color); */
 }
 
 .explore-together h2, .explore-together p {
@@ -87,6 +106,10 @@
     font-size: 2.75em;
     font-weight: bold;
     color: var(--font-color-dark);
+}
+
+.young-scientist h2, .teachers h2, .researchers h2 {
+    color: var(--font-color-light);
 }
 
 .opening-hours {
@@ -238,7 +261,6 @@
 
 #news-energetica {
     background-image: var(--news-img-bg-eel);
-    /* width: 20rem; */
     height: 19em;
     background-position: center;
     background-size: cover;
@@ -254,7 +276,6 @@
     background-repeat: no-repeat;
     align-content: flex-end;
     justify-content: flex-start;
-    /* width: 20em; */
     height: 19em;
 }
 
@@ -265,7 +286,6 @@
     background-repeat: no-repeat;
     align-content: flex-end;
     justify-content: flex-start;
-    /* width: 20em; */
     height: 19em;
 }
 
@@ -306,38 +326,4 @@
         height: 8em;
         padding: 0;
     }
-
-    /* #news-professor, #news-night-am, #news-energetica {
-        width: 10em;
-        height: 8em;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        align-content: flex-end;
-        justify-content: flex-start;
-    } */
-
-
 }
-
-/* .opening-hours-image-container {
-    display: inline-flex;
-    flex-direction: column-reverse;
-}
-
-.btn-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 1em;
-    padding: 2.5% 0;
-}
-
-.opening-hours-image-container img {
-    position: relative;
-    width: 70%;
-    height: 23rem;
-    object-fit: cover;
-    object-position: 100% 0;
-}
-
