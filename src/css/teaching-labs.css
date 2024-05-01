@@ -35,7 +35,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     row-gap: 2em;
-    text-align: flex-start;
+    text-align: start;
     position: relative;
     padding-bottom: 1.5em;
 }
@@ -55,7 +55,7 @@
     flex-wrap: wrap;
 }
 
-#opening-hours-teaching-labs-button-container {
+#opening-hours-teaching-labs-button-container, #button-pink-container, #teaching-labs-by-grade-button-container, #button-yellow-container {
     display: flex;
     flex-direction: column;
     background-image: var(--teachers-page-img-bg-opening-hours);
@@ -65,6 +65,82 @@
     width: 20rem;
 }
 
+.teaching-by-grade-container {
+    padding: 2rem 5%;
+}
 #teaching-labs-main-container h2, p {
     color: var(--font-color-dark);
+}
+
+.teaching-by-grade-container h2 {
+    font-size: 2rem;
+    padding: 3rem 5%;
+}
+
+.teaching-by-grade-container h3 {
+    padding-left: 5%;
+    font-size: 1.5rem;
+}
+
+.teaching-by-grade-container {
+    display: flex;
+    flex-direction: column  ;
+    flex-wrap: wrap;
+}
+
+.teaching-by-grade {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8rem;
+    padding: 2rem 5%;
+}
+
+#teaching-lab-img-container, #grade-four-img, #grade-four-button, #grade-ten-img  {
+    background-size: cover;
+    background-position: center;
+}
+
+#teaching-lab-img-container {
+    background-image: var(--teach-lab-bg-space);
+}
+
+#teaching-labs-by-grade-button-container {
+    background-image: var(--teach-lag-bg-ant);
+}
+
+#grade-four-img {
+    background-image: var(--ex-img-bg-ai);
+}
+
+#grade-four-button {
+    background-image: var(--ex-img-bg-ev);
+}
+
+#grade-ten-button {
+    background-image: var(--teach-lab-bg-micro);
+}
+#grade-ten-img {
+    background-image: var(--teach-lab-bg-vr);
+}
+
+#teaching-labs-by-grade-button-container, #teaching-lab-img-container, #grade-four-img, #grade-four-button, #grade-ten-img, #grade-ten-button {
+    height: 25rem;
+    width: 25rem;
+}
+
+@media screen and (max-width: 767px) {
+
+    .teaching-by-grade {
+        gap: 2rem;
+    }
+    #teaching-lab-img-container, #teaching-labs-by-grade-button-container, #grade-four-img, #grade-four-button, #grade-ten-img, #grade-ten-button {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    #teaching-labs-by-grade-button-container {
+        font-size: 0.75rem;
+    }
 }
