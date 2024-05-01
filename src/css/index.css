@@ -43,7 +43,6 @@
     column-gap: 4.5em;
 }
 
-
 #hero-index-banner {
     background-position: center;
     background-size: cover;
@@ -325,5 +324,9 @@
         width: 10em;
         height: 8em;
         padding: 0;
+    }
+
+    #young-scientist-container {
+        background-position: right;
     }
 }
