@@ -28,71 +28,74 @@
             </nav>
         </header>
 
-        <!--THIS SECTION IS CHECKED AND WORKS-->
-        <section class="booking-container">
-            <h1>Book your tour</h1>
-            <form action="commit" id="book-your-tour-public-form">
-                <div class="book-tour-input" id="date-booking">
-                    <label for="date-of-your-visit">Date of your visit:</label>
-                    <input type="date" id="date-of-your-visit" class="book-tour-public-input">
-                </div>
-                <div class="book-tour-input" id="book-tour-public-first-second-name">
-                    <label for="first-second-name">Name:</label>
-                    <input type="text" id="first-second-name" placeholder="First and second name" class="book-tour-plublic-input">
-                </div>
 
-                <div class="book-tour-input" id="book-tour-public-number-of-participants">
-                    <label for="number-of-participants">Number of participants</label>
-                    <input type="number" id="number-of-participants" placeholder="Number of participants in group" class="book-tour-plublic-input">
+        <section class="booking">
+            <div class="booking-container">
+                <h1>Book your tour</h1>
+                <form action="commit" id="book-your-tour-public-form">
+                    <div class="book-tour-input" id="date-booking">
+                        <label for="date-of-your-visit">Date of your visit:</label>
+                        <input type="date" id="date-of-your-visit" placeholder="dd/mm/yyyy" class="book-tour-public-input">
+                    </div>
+                    <div class="book-tour-input" id="book-tour-public-first-second-name">
+                        <label for="first-second-name">Name:</label>
+                        <input type="text" id="first-second-name" placeholder="First and second name" class="book-tour-plublic-input">
+                    </div>
+
+                    <div class="book-tour-input" id="book-tour-public-number-of-participants">
+                        <label for="number-of-participants">Number of participants</label>
+                        <input type="number" id="number-of-participants" placeholder="Number of participants in group" class="book-tour-plublic-input">
+                    </div>
+                    <div class="book-tour-input" id="contact-email">
+                        <label for="email">E-mail you wish to be contacted on</label>
+                        <input id="email" type="email" placeholder="E-mail" class="contact-us-input">
+                    </div>
+                </form>
+                <div class="book-your-tour-public-form" id="contact-ymessage">
+                    <label for="message">Other needs?</label>
+                    <textarea id="message" placeholder="Your message" class="contact-us-input"></textarea>
                 </div>
-                <div class="book-tour-input" id="contact-email">
-                    <label for="email">E-mail you wish to be contacted on</label>
-                    <input id="email" type="email" placeholder="E-mail" class="contact-us-input">
+                <div class="button-pink-container">
+                    <a class="button-pink" id="pink-button-book-tour" href="">Book now</a>
                 </div>
-            </form>
-            <div class="book-your-tour-public-form" id="contact-ymessage">
-                <label for="message">Other needs?</label>
-                <textarea id="message" placeholder="Your message" class="contact-us-input"></textarea>
-            </div>
-            <div class="book-your-tour-public-form" id="book-tour-public-commit">
-                <a class="button-pink" id="pink-button-book-tour" href="">Book now</a>
             </div>
         </section>
 
-        <!--THIS SECTION NEEDS TO BE CORRECTED-->
         <section class="booking-for-schools-container">
-            <h1>Booking for Schools</h1>
-            <form action="commit" id="book-your-tour-school-form">
-                <div class="book-tour-input" id="date-booking-school">
-                    <label for="date-of-your-visit-school">Date of your visit:</label>
-                    <input type="date" id="date-of-your-visit-school" class="book-tour-school-input">
-                </div>
+            <div class="booking-container" id="booking-container-school">
+                <h1>Booking for Schools</h1>
+                <form action="commit" id="book-your-tour-school-form">
+                    <div class="book-tour-input" id="date-booking-school">
+                        <label for="date-of-your-visit-school">Date of your visit:</label>
+                        <input type="date" id="date-of-your-visit-school" class="book-tour-school-input">
+                    </div>
 
-                <div class="book-tour-input" id="school-name">
-                    <label for="shool-name-write">School</label>
-                    <input type="text" id="shool-name-write" placeholder="First and second name" class="book-tour-school-input">
-                </div>
+                    <div class="book-tour-input" id="school-name">
+                        <label for="shool-name-write">School</label>
+                        <input type="text" id="shool-name-write" placeholder="First and second name" class="book-tour-school-input">
+                    </div>
 
-                <div class="book-tour-input" id="grade-school">
-                    <label for="school-grade">Grade</label>
-                    <input type="number" id="school-grade" placeholder="Number of participants in group" class="book-tour-school-input">
-                </div>
-                <div class="book-tour-input" id="number-of-participants-school-class">
-                    <label for="number-of-participants-class">Numbers of participants</label>
-                    <input type="number" id="number-of-participants-class" placeholder="Number of participants in class" class="book-tour-school-input">
-                </div>
+                    <div class="book-tour-input" id="grade-school">
+                        <label for="school-grade">Grade</label>
+                        <input type="number" id="school-grade" placeholder="Number of participants in group" class="book-tour-school-input">
+                    </div>
+                    <div class="book-tour-input" id="number-of-participants-school-class">
+                        <label for="number-of-participants-class">Numbers of participants</label>
+                        <input type="number" id="number-of-participants-class" placeholder="Number of participants in class" class="book-tour-school-input">
+                    </div>
 
-                <div class="book-tour-input" id="contact-email-school">
-                    <label for="email-school">E-mail you wish to be contacted on</label>
-                    <input id="email-school" type="email" placeholder="E-mail" class="contact-us-input">
+                    <div class="book-tour-input" id="contact-email-school">
+                        <label for="email-school">E-mail you wish to be contacted on</label>
+                        <input id="email-school" type="email" placeholder="E-mail" class="contact-us-input">
+                    </div>
+                </form>
+                <div class="book-your-tour-public-form" id="contact-ymessage-school">
+                    <label for="message-school">Other needs?</label>
+                    <textarea id="message-school" placeholder="Your message" class="contact-us-input"></textarea>
                 </div>
-            </form>
-            <div class="book-your-tour-public-form" id="contact-ymessage-school">
-                <label for="message-school">Other needs?</label>
-                <textarea id="message-school" placeholder="Your message" class="contact-us-input"></textarea>
-            </div>
-            <div class="book-your-tour-public-form" id="book-tour-public-commit-school">
-                <a class="button-pink" id="pink-button-book-tour-school" href="">Book now</a>
+                <div class="button-pink-container">
+                    <a class="button-pink" id="pink-button-book-tour-school" href="">Book now</a>
+                </div>
             </div>
         </section>
 

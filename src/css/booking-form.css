@@ -1,0 +1,53 @@
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 5%;
+}
+
+.booking {
+    border-bottom: solid 2px var(--font-color-dark);
+}
+
+.booking-container h1 {
+    padding-bottom: 1rem;
+    font-size: 2em;
+}
+
+.book-your-tour-public-form, .book-tour-input label  {
+    font-family: Goldman, sans-serif;
+    padding-bottom: 1rem;
+}
+.book-tour-input, .book-your-tour-public-form {
+    padding-bottom: 1rem;
+}
+
+.book-your-tour-public-form {
+    min-height: 10rem;
+}
+
+.book-tour-input input, .book-your-tour-public-form textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 0.75em;
+    background-color: var(--bg-button-color);
+    border: none;
+    font-family: Quicksand, sans-serif;
+    font-size: 1em;
+    min-width: 90vw;
+    padding-bottom: 0.5rem;
+}
+
+.book-your-tour-public-form textarea {
+    min-height: 7rem;
+}
+
+.book-tour-input input::placeholder, .book-your-tour-public-form textarea::placeholder {
+    color: var(--font-color-dark);
+    padding-left: 0.5rem;
+}
+
+.button-pink-container {
+    padding-bottom: 2rem;
+}
