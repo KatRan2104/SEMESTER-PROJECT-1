@@ -38,7 +38,6 @@ nav ul {
 
 .nav-button-container {
     display: none;
-    /* height: 100%; */
     width: 5rem;
     cursor: pointer;
     flex-direction: column;

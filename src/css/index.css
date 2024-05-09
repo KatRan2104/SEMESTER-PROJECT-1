@@ -101,7 +101,7 @@
     padding: 0.25rem 2.5%;
 }
 
-.explore-together h2, .exhibitions h2, .news h2, .young-scientist h2, .teachers h2, .researchers h2 {
+.explore-together h2, .exhibitions h2, .news-main-container h2, .young-scientist h2, .teachers h2, .researchers h2 {
     font-size: 2.75em;
     font-weight: bold;
     color: var(--font-color-dark);
@@ -165,7 +165,7 @@
     width: 60%;
 }
 
-.exhibitions, .news {
+.exhibitions-main-container, .news-main-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -175,10 +175,10 @@
     border-bottom: solid 0.15em var(--main-color);
 }
 
-.exhibitions p, .news p {
+.exhibitions-main-container p, .news-main-container p {
     font-family: Goldman, sans-serif;
     font-size: 1.5em;
-    color: var(--font-color-dark);
+    /* color: var(--font-color-dark); */
 }
 
 .ex-img-container h3, .news-img-container h3 {
@@ -189,20 +189,21 @@
 .ex-dropdown, .news-dropdown {
     display: flex;
     flex-direction: row;
-    max-width: 12rem;
-    background-color: var(--main-color);
+    /* max-width: 14rem; */
+    /* background-color: var(--main-color); */
     color: var(--font-color-light);
 }
 
 .ex-dropdown h4, .news-dropdown h4 {
     font-family: Goldman, sans-serif;
-    font-size: 1em;
+    font-size: 1.25rem;
 }
 
 .ex-dropdown h4, .news-dropdown h4, .ex-dropdown span, .news-dropdown span {
     color: var(--font-color-light);
     padding: 0.5rem 1rem;
 }
+
 
 #robotics-ai {
     background-image: var(--ex-img-bg-ai);
