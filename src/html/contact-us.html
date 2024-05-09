@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSMU | Teaching labs</title>
-    <link rel="stylesheet" href="../css/sucessfull-booking.css">
+    <link rel="stylesheet" href="../css/booking-form.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/navbar.css">
@@ -21,23 +21,37 @@
                 <ul class="nav-list">
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../html/exhibitions.html">Exhibitions</a></li>
-                    <li><a href="../html/practical-information.html">Practical info</a></li>
+                    <li><a href="#">Practical info</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="../html/want-to-contribute.html">Support Us</a></li>
+                    <li><a href="#">Support Us</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="sucessfull-booking">
-            <div class="successful-booking-container">
-                <h1>Thank you for booking!</h1>
-                    <img src="../../assets/img/Phone/Checkpoint.jpg" alt="Successful booking">
-                    <p>A confirmation e-mail is on its way to you.</p>
-                    <div id="text-successful-booking">
-                    <p id="bold-text">You have booked:</p>
-                    <p>The Anatomy Teaching Lab for 24 students the 20. June 2024, at 10:00.</p>
+
+
+        <section class="booking">
+            <div class="booking-container">
+                <h1>Contact Us</h1>
+                <form action="commit" id="book-your-tour-public-form">
+                    <div class="book-tour-input" id="book-tour-public-first-second-name">
+                        <label for="first-second-name">Name:</label>
+                        <input type="text" id="first-second-name" placeholder="First and second name" class="book-tour-plublic-input">
                     </div>
+                    <div class="book-tour-input" id="contact-email">
+                        <label for="email">E-mail you wish to be contacted on</label>
+                        <input id="email" type="email" placeholder="E-mail" class="contact-us-input">
+                    </div>
+                </form>
+                <div class="book-your-tour-public-form" id="contact-ymessage">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Your message" class="contact-us-input"></textarea>
+                </div>
+                <div class="button-pink-container">
+                    <a class="button-pink" id="pink-button-book-tour" href="">Send now!</a>
+                </div>
             </div>
         </section>
+
         <footer>
             <div class="footer-container">
                 <div class="left-side-footer">
@@ -53,7 +67,7 @@
                 <div class="right-side-footer">
                     <ul>
                         <li>Our Location:</li>
-                        <li>Øvre slottsgate 23, 0245 Oslo</li>
+                        <li> Øvre slottsgate 23, 0245 Oslo</li>
                         <li><img src="../../assets/img/logo-080808-background.png" alt="Logo-image"></li>
                     </ul>
                 </div>
@@ -61,4 +75,3 @@
         </footer>
     </body>
 </html>
-
