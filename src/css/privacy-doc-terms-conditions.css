@@ -1,28 +1,28 @@
 
-.privacy-main-container {
+.privacy-main-container, .terms-main-container {
     display: flex;
     flex-direction: column;
     padding: 2rem 5%;
     gap: 1rem;
 }
 
-.privacy-main-container h1 {
+.privacy-main-container h1, .terms-main-container h1{
     font-size: 2rem;
     color: var(--main-color);
     padding-bottom: 1rem;
 }
 
-.privacy-main-container h3 {
+.privacy-main-container h3, .terms-main-container h3 {
     font-size: 1.5rem;
 }
 
-.privacy-main-container ul {
+.privacy-main-container ul, .terms-main-container ul{
     font-family: Quicksand, sans-serif;
     font-size: 1rem;
     text-align: left;
 }
 
-.privacy-main-container li {
+.privacy-main-container li, .terms-main-container li {
     list-style: circle;
     font-size: 1.25rem;
 }
