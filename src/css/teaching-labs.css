@@ -1,61 +1,39 @@
 #hero-teaching-lab-banner {
-    background-image: url(../../assets/img/learn.jpg);
+    background-image: linear-gradient(rgba(247, 219, 207, 0.284), rgba(242, 212, 212, 0.326)), url(../../assets/img/learn.jpg);
     background-position: center;
     background-size: cover;
+    min-height: 60vh;
 }
 
 #hero-teaching-lab-banner h1 {
     color: var(--font-color-light);
-    padding-top: 5rem;
-    padding-bottom: 1.5rem;
-}
-
-#hero-teaching-lab-banner::after{
-    content: "";
-    background-color:  rgba(56, 56, 56, 0.44);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .7;
-}
-
-#hero-teaching-lab-banner::after {
-    z-index: 1;
-}
-#hero-teaching-lab-banner::after > * {
-    z-index: 100;
 }
 
 .teaching-labs-main-container {
-    border-bottom: solid 1px var(--font-color-dark);
+    border-bottom: solid 2px var(--font-color-dark);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    row-gap: 2em;
     text-align: start;
     position: relative;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.5rem;
 }
 
 .text-teaching-labs, .button-pink-container {
-    padding: 0 5%;
+    padding: 2rem 5%;
 }
 
-.text-teaching-labs {
-    padding: 3rem 5%;
-}
 
 #opening-hours-teaching-labs-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 4rem;
 }
 
-#opening-hours-teaching-labs-button-container, #button-pink-container, #teaching-labs-by-grade-button-container, #button-yellow-container {
+#opening-hours-teaching-labs-button-container, #button-pink-container, #teaching-labs-by-grade-button-container, #teaching-labs-by-grade-button-container2,#teaching-labs-by-grade-button-container3, #button-yellow-container {
     display: flex;
     flex-direction: column;
     background-image: var(--teachers-page-img-bg-opening-hours);
@@ -68,23 +46,29 @@
 .teaching-by-grade-container {
     padding: 2rem 5%;
 }
+
 #teaching-labs-main-container h2, p {
     color: var(--font-color-dark);
 }
 
 .teaching-by-grade-container h2 {
-    font-size: 2rem;
-    padding: 3rem 5%;
+    font-size: 2.5rem;
+    padding: 2rem 5%;
+}
+
+.text-teaching-labs h2 {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .teaching-by-grade-container h3 {
     padding-left: 5%;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .teaching-by-grade-container {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -93,11 +77,11 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 8rem;
+    gap: 2rem;
     padding: 2rem 5%;
 }
 
-#teaching-lab-img-container, #grade-four-img, #grade-four-button, #grade-ten-img  {
+#teaching-lab-img-container, #teaching-lab-img-container2, #teaching-lab-img-container3  {
     background-size: cover;
     background-position: center;
 }
@@ -110,24 +94,28 @@
     background-image: var(--teach-lag-bg-ant);
 }
 
-#grade-four-img {
+#teaching-lab-img-container2 {
     background-image: var(--ex-img-bg-ai);
 }
 
-#grade-four-button {
+#teaching-labs-by-grade-button-container2 {
     background-image: var(--ex-img-bg-ev);
 }
 
-#grade-ten-button {
+#teaching-labs-by-grade-button-container3 {
     background-image: var(--teach-lab-bg-micro);
 }
-#grade-ten-img {
+#teaching-lab-img-container3 {
     background-image: var(--teach-lab-bg-vr);
 }
 
-#teaching-labs-by-grade-button-container, #teaching-lab-img-container, #grade-four-img, #grade-four-button, #grade-ten-img, #grade-ten-button {
+#teaching-lab-img-container, #teaching-labs-by-grade-button-container, #teaching-lab-img-container2, #teaching-lab-img-container3, #teaching-labs-by-grade-button-container2,#teaching-labs-by-grade-button-container3 {
     height: 25rem;
     width: 25rem;
+}
+
+#teaching-labs-by-grade-button-container, #teaching-labs-by-grade-button-container2,#teaching-labs-by-grade-button-container3 {
+    padding: 2rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -135,12 +123,16 @@
     .teaching-by-grade {
         gap: 2rem;
     }
-    #teaching-lab-img-container, #teaching-labs-by-grade-button-container, #grade-four-img, #grade-four-button, #grade-ten-img, #grade-ten-button {
+    #teaching-lab-img-container, #teaching-labs-by-grade-button-container, #teaching-lab-img-container2, #teaching-lab-img-container3, #teaching-labs-by-grade-button-container2,#teaching-labs-by-grade-button-container3 {
         height: 15rem;
         width: 15rem;
     }
 
-    #teaching-labs-by-grade-button-container {
+    #teaching-labs-by-grade-button-container, #teaching-labs-by-grade-button-container2,#teaching-labs-by-grade-button-container3 {
         font-size: 0.75rem;
+    }
+
+    #hero-teaching-lab-banner {
+        background-position: right;
     }
 }

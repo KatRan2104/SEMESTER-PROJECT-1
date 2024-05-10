@@ -1,5 +1,17 @@
 
 
+#hero-explore-together-banner {
+    background-image: url("../../assets/img/Phone/Rectangle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55vh;
+}
+
+#text-explore-together, .hero-banner-main-container h1 {
+    padding: 2rem 5% 0;
+}
+
 .hero-banner-main-container {
     display: flex;
     flex-direction: column;
@@ -7,17 +19,12 @@
 }
 
 .hero-banner-main-container h1, .get-involved-main-container h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--main-color);
-    padding-bottom: 1rem;
-
-}
-.hero-banner-main-container h1 {
-    padding-left: 2.5%;
 }
 
 #text-explore-together p {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     font-family: Quicksand, sans-serif;
 }
 
@@ -25,12 +32,25 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 2rem 7%;
-    gap: 0.75rem;
+    padding: 2rem 5%;
+}
+
+.get-involved-sub-container {
+    border-bottom: solid 2px var(--main-color);
+    padding: 2rem 0 3rem 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-involved-sub-container h3 {
+    font-size: 2.5rem;
+    color: var(--main-color);
 }
 
 .get-involved-sub-container h3, p {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .explore-together {
