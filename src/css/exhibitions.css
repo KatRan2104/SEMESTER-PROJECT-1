@@ -2,13 +2,14 @@
 #hero-exhibitions-banner {
     display: flex;
     flex-direction: column;
-    background-image: url(../../assets/img/exhibition-1863344_1920.jpg);
+    background-image: linear-gradient(rgba(56, 56, 56, 0.44), rgba(56, 56, 56, 0.44)), url(../../assets/img/exhibition-1863344_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: center;
+    justify-content: center;
     row-gap: 2em;
     text-align: center;
-    position: relative;
+    height: 50vh;
+    /* position: relative; */
 }
 
 #hero-exhibitions-banner h1 {
@@ -17,22 +18,8 @@
     padding-bottom: 1.5rem;
 }
 
-#hero-exhibitions-banner::after{
-    content: "";
-    background-color:  rgba(56, 56, 56, 0.44);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .7;
-}
-
-#hero-exhibitions-banner::after {
-    z-index: 1;
-}
-#hero-exhibitions-banner::after > * {
-    z-index: 50;
+.exhibitions-main-container h2 {
+    font-size: 3em;
 }
 
 #exhibitions-main-container {
@@ -40,22 +27,25 @@
     border-bottom: solid 1px var(--font-color-dark);
 }
 
-#young-scientist-container::after{
-    content: "";
-    background-color:  rgba(56, 56, 56, 0.44);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .7;
+#young-scientist-container, #teacher-container-main, #researchers-container {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
 }
 
-#young-scientist-container::after {
-    z-index: 1;
+#young-scientist-container h2, #teacher-container-main h2, #researchers-container h2 {
+    font-size: 4em;
 }
-#young-scientist-container::after > * {
-    z-index: 50;
+
+.audience-content-text {
+    padding: 1rem 5%;
+    margin-bottom: 2rem;
+}
+
+.audience-content-text p {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {

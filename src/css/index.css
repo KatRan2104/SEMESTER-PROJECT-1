@@ -5,47 +5,35 @@
 .hero-banner, .young-scientist, .teachers-img-container, .researchers {
     display: flex;
     flex-direction: column;
-    background-image: url(../../assets/img/scott-webb-102825.jpg);
+    background-image: linear-gradient(rgba(253, 251, 251, 0.352), rgba(208, 208, 208, 0.349)), url(../../assets/img/scott-webb-102825.jpg);
     align-items: center;
+    justify-content: center;
     row-gap: 2em;
     text-align: center;
     position: relative;
     padding-bottom: 1.5em;
 }
 
-.hero-banner::after {
-    content: "";
-    background-color:  rgba(217, 217, 217, 0.44);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .7;
-}
-
-.hero-banner::after {
-    z-index: 1;
-}
-.hero-banner > * {
-    z-index: 50;
-}
-
 .hero-banner h1 {
     font-size: 4rem;
     color: var(--font-color-dark);
-    padding: 5%;
+    padding: 7rem 5% 2rem;
 }
 
 .hero-banner-buttons {
     display: flex;
     flex-direction: row;
     column-gap: 4.5em;
+    padding-bottom: 3rem;
 }
 
 #hero-index-banner {
     background-position: center;
     background-size: cover;
+}
+
+.audience-section, .news-section {
+    padding-top: 4rem;
 }
 
 .young-scientist, .teachers-img-container, .researchers {
@@ -58,33 +46,16 @@
     justify-content: flex-end;
 }
 
-.young-scientist::after {
-    content: "";
-    background-color:  rgba(42, 39, 39, 0.387);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .7;
-}
-.young-scientist::after {
-    z-index: 1;
-}
-.young-scientist > * {
-    z-index: 50;
-}
-
 .young-scientist {
-    background-image: var(--for-img-bg-ys);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.332), rgba(98, 98, 98, 0.4)), var(--for-img-bg-ys);
 }
 
 .teachers-img-container {
-    background-image: var(--for-img-bg-t);
+    background-image: linear-gradient(rgba(165, 111, 19, 0.336), rgba(147, 137, 100, 0.227)), var(--for-img-bg-t);
 }
 
 .researchers {
-    background-image: var(--for-img-bg-r);
+    background-image: linear-gradient(rgba(94, 102, 128, 0.215), rgba(100, 122, 147, 0.241)), var(--for-img-bg-r);
 }
 
 .explore-together {
@@ -93,7 +64,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     row-gap: 0.25em;
-    padding: 2rem 5%;
+    padding: 2rem 5% 1.25rem;
 }
 
 .explore-together h2, .explore-together p {
@@ -102,7 +73,7 @@
 }
 
 .explore-together h2, .exhibitions h2, .news-main-container h2, .young-scientist h2, .teachers h2, .researchers h2 {
-    font-size: 2.75em;
+    font-size: 3em;
     font-weight: bold;
     color: var(--font-color-dark);
 }
@@ -206,7 +177,7 @@
 
 
 #robotics-ai {
-    background-image: var(--ex-img-bg-ai);
+    background-image: var(--ex-img-bg-ai) ;
     background-position: bottom, center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,7 +188,7 @@
 }
 
 #medicine-biology {
-    background-image: var(--ex-img-bg-bm);
+    background-image: linear-gradient(rgba(253, 251, 251, 0.178), rgba(208, 208, 208, 0.172)), var(--ex-img-bg-bm);
     background-position: bottom, center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,7 +199,7 @@
 }
 
 #cosmology {
-    background-image: var(--ex-img-bg-co);
+    background-image: linear-gradient(rgba(253, 251, 251, 0.136), rgba(208, 208, 208, 0.129)), var(--ex-img-bg-co);
     background-position: bottom, center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -238,7 +209,7 @@
     justify-content: flex-start;
 }
 #ecology{
-    background-image: var(--ex-img-bg-ec);
+    background-image: linear-gradient(rgba(253, 251, 251, 0.158), rgba(208, 208, 208, 0.119)), var(--ex-img-bg-ec);
     background-position: bottom, center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -249,7 +220,7 @@
 }
 
 #evolution {
-    background-image: var(--ex-img-bg-ev);
+    background-image: linear-gradient(rgba(253, 251, 251, 0.155), rgba(208, 208, 208, 0.107)), var(--ex-img-bg-ev);
     background-position: bottom, center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -260,7 +231,7 @@
 }
 
 #news-energetica {
-    background-image: var(--news-img-bg-eel);
+    background-image: linear-gradient(rgba(94, 102, 128, 0.299), rgba(100, 122, 147, 0.317)), var(--news-img-bg-eel);
     height: 19em;
     background-position: center;
     background-size: cover;
@@ -270,7 +241,7 @@
 }
 
 #news-professor {
-    background-image: var(--news-img-bg-vpa);
+    background-image: linear-gradient(rgba(94, 102, 128, 0.352), rgba(66, 71, 76, 0.387)), var(--news-img-bg-vpa);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -280,7 +251,7 @@
 }
 
 #news-night-am {
-    background-image: var(--news-img-bg-night);
+    background-image: linear-gradient(rgba(94, 102, 128, 0.299), rgba(100, 122, 147, 0.317)), var(--news-img-bg-night);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
