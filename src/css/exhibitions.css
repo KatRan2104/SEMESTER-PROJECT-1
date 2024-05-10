@@ -8,7 +8,8 @@
     justify-content: center;
     row-gap: 2em;
     text-align: center;
-    height: 70vh;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 #hero-exhibitions-banner h1 {
@@ -48,12 +49,25 @@
 }
 
 @media screen and (max-width: 767px) {
+    #hero-exhibitions-banner h1 {
+        font-size: 2.5rem;
+    }
+
     #hero-exhibitions-banner {
         background-position: right;
     }
 
     #exhibitions-main-container {
-        font-size: 1em;
+        font-size: 1rem;
         justify-content: center;
+    }
+
+    #young-scientist-container h2, #teacher-container-main h2, #researchers-container h2 {
+        font-size: 2.5rem;
+    }
+
+
+    #young-scientist-container, #teacher-container-main, #researchers-container {
+        margin: 0;
     }
 }

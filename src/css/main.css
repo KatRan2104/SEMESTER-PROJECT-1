@@ -108,7 +108,6 @@ a {
 .exhibitions-container, .news-container {
     display: flex;
     flex-direction: row;
-    /* column-gap: 4.5em; */
     background-image: url("");
     width: 20em;
     height: 19em;

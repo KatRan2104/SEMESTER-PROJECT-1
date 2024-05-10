@@ -5,6 +5,7 @@
 .hero-banner, .young-scientist, .teachers-img-container, .researchers {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-image: linear-gradient(rgba(253, 251, 251, 0.352), rgba(208, 208, 208, 0.349)), url(../../assets/img/scott-webb-102825.jpg);
     align-items: center;
     justify-content: center;
@@ -206,8 +207,8 @@
     background-repeat: no-repeat;
     align-items: flex-end;
     flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: flex-start;
+    /* align-content: flex-end;
+    justify-content: flex-start; */
 }
 #ecology{
     background-image: linear-gradient(rgba(253, 251, 251, 0.158), rgba(208, 208, 208, 0.119)), var(--ex-img-bg-ec);
@@ -216,8 +217,8 @@
     background-repeat: no-repeat;
     align-items: flex-end;
     flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: flex-start;
+    /* align-content: flex-end;
+    justify-content: flex-start; */
 }
 
 #evolution {
@@ -227,8 +228,8 @@
     background-repeat: no-repeat;
     align-items: flex-end;
     flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: flex-start;
+    /* align-content: flex-end;
+    justify-content: flex-start; */
 }
 
 #news-energetica {
@@ -270,8 +271,16 @@
 
 
 @media screen and (max-width: 767px) {
+
+    .hero-banner, .young-scientist, .teachers-img-container, .researchers {
+        margin: 0;
+    }
+
+    .young-scientist, .teachers-img-container, .researchers
+
     .hero-banner h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
+        padding: 1rem 0;
     }
 
     .hero-banner-buttons {
@@ -298,4 +307,9 @@
     #young-scientist-container {
         background-position: right;
     }
+
+    .explore-together h2, .exhibitions h2, .news-main-container h2, .young-scientist h2, .teachers h2, .researchers h2 {
+        font-size: 2rem;
+    }
+
 }
