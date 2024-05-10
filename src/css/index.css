@@ -42,7 +42,7 @@
     padding: 2rem 5%;
     margin-bottom: 5rem;
     margin-top: 1.25rem;
-    height: 70vh;
+    min-height: 50vh;
     align-items: center;
     justify-content: flex-end;
 }
@@ -232,6 +232,15 @@
     justify-content: flex-start; */
 }
 
+#book-tour {
+    background-image: linear-gradient(rgba(253, 251, 251, 0.155), rgba(208, 208, 208, 0.107)), var(--for-img-bg-ys);
+    background-position: bottom, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 #news-energetica {
     background-image: linear-gradient(rgba(94, 102, 128, 0.299), rgba(100, 122, 147, 0.317)), var(--news-img-bg-eel);
     height: 19em;
@@ -272,11 +281,14 @@
 
 @media screen and (max-width: 767px) {
 
-    .hero-banner, .young-scientist, .teachers-img-container, .researchers {
+    /* .hero-banner, .young-scientist, .teachers-img-container, .researchers {
         margin: 0;
-    }
+    } */
 
-    .young-scientist, .teachers-img-container, .researchers
+    .young-scientist, .teachers-img-container, .researchers {
+        padding: 1rem 5%;
+        margin-bottom: 2rem;
+    }
 
     .hero-banner h1 {
         font-size: 2.5rem;

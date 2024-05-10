@@ -10,6 +10,7 @@
     text-align: center;
     position: relative;
     flex-wrap: wrap;
+    min-height: 70vh;
 }
 
 #hero-exhibitions-banner h1 {
