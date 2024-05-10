@@ -49,5 +49,13 @@
 }
 
 .button-pink-container {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+}
+
+.booking-container p {
+    padding-bottom: 1rem;
+}
+
+.booking-container span {
+    font-weight: 600;
 }
