@@ -2,7 +2,7 @@
 
 
 #practical-information-banner {
-    background-image: linear-gradient(#ffffffbd, #ffffff8b), url(../../assets/img/lab.jpg);
+    background-image: linear-gradient(#c2cbffad, #abe3ffa4), url(../../assets/img/lab.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,14 +13,13 @@
     padding-bottom: 4rem;
 }
 
-
 .our-location-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2rem 5%;
-    border-bottom: solid 1px var(--font-color-dark);
+    border-bottom: solid 2px var(--font-color-dark);
 }
 
 .our-location-container h2 {
@@ -36,7 +35,7 @@
 }
 
 .opening-hours-container {
-    border-bottom: solid 1px var(--font-color-dark);
+    border-bottom: solid 2px var(--font-color-dark);
 }
 
 .admissions {
@@ -44,11 +43,24 @@
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    border-bottom: solid 1px var(--font-color-dark);
+    border-bottom: solid 2px var(--font-color-dark);
 }
 
 .admissions h2, h3, p {
     padding-bottom: 1rem;
+}
+
+.admissions h2 {
+    font-size: 3rem;
+}
+
+.our-location h2, .container-text-admissions h3 {
+    font-size: 2.5rem;
+}
+
+#bigger-text {
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 .admissions span, .our-location-container-text span {
@@ -64,15 +76,54 @@
     padding: 2rem 0;
 }
 
+#accessibility, #shop, #food-and-drink{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    align-content: center;
+}
+
+#accessibility  {
+    border-bottom: none;
+}
+
+#icon-practical-info-a, #icon-practical-info-s, #icon-practical-info-fd {
+    align-self: center;
+    font-size: 4rem;
+    padding: 1rem 0 1rem 0
+}
+
 @media screen and (max-width: 767px) {
+    #accessibility, #shop, #food-and-drink, .container-buttons-admissions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.our-location-container-map iframe {
-    width: 17rem;
-    height: 17rem;
-    padding-top: 1.5rem;
-}
+    .our-location-container-map iframe {
+        width: 17rem;
+        height: 17rem;
+        padding-top: 1.5rem;
+    }
 
-#practical-information-banner {
-    background-size: cover;
-}
+    #practical-information-banner {
+        background-size: cover;
+    }
+
+    #opening-hours-practical-information-container, #location-container {
+        padding-bottom: 4rem;
+        padding-top: none;
+    }
+
+    .admissions h2 {
+        font-size: 2.5rem;
+    }
+
+    .our-location h2, .container-text-admissions h3 {
+        font-size: 2rem;
+    }
+
+    /* #opening-hours-practical-information-container {
+        top: none;
+    } */
 }
