@@ -2,13 +2,13 @@
 #hero-exhibitions-banner {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(56, 56, 56, 0.44), rgba(56, 56, 56, 0.44)), url(../../assets/img/exhibition-1863344_1920.jpg);
+    background-image: linear-gradient(rgba(149, 149, 149, 0.294), rgba(56, 56, 56, 0.142)), url(../../assets/img/exhibition-1863344_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
     row-gap: 2em;
     text-align: center;
-    height: 50vh;
+    height: 70vh;
     /* position: relative; */
 }
 

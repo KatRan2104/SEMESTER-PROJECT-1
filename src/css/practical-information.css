@@ -2,36 +2,15 @@
 
 
 #practical-information-banner {
-    background-image: url(../../assets/img/lab.jpg);
+    background-image: linear-gradient(#ffffffbd, #ffffff8b), url(../../assets/img/lab.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 #practical-information-banner h1 {
-    /* padding-top: 20rem; */
-    padding-bottom: 1.5rem;
-    height: 28vh;
-}
-
-
-#practical-information-banner::after{
-    content: "";
-    background-color:  rgba(212, 221, 255, 0.849);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .7;
-}
-
-#practical-information-banner::after {
-    z-index: 1;
-}
-#practical-information-banner::after > * {
-    z-index: 100;
+    padding-bottom: 4rem;
 }
 
 
