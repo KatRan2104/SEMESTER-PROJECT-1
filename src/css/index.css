@@ -33,8 +33,14 @@
     background-size: cover;
 }
 
-.audience-section, .news-section {
-    padding-top: 4rem;
+details p {
+    position: relative;
+    z-index: 1000;
+}
+
+.audience-section {
+    position:relative;
+    z-index: 1;
 }
 
 .young-scientist, .teachers-img-container, .researchers {
@@ -42,7 +48,7 @@
     padding: 2rem 5%;
     margin-bottom: 5rem;
     margin-top: 1.25rem;
-    min-height: 50vh;
+    min-height: 55vh;
     align-items: center;
     justify-content: flex-end;
 }
@@ -68,9 +74,16 @@
     padding: 2rem 5% 1.25rem;
 }
 
-.explore-together h2, .explore-together p {
+.explore-together h2  {
     font-family: Goldman, sans-serif;
     padding: 0.25rem 2.5%;
+}
+
+.explore-together p {
+    font-family: Quicksand, sans-serif;
+    padding: 0.25rem 2.5%;
+    font-size: 1.12em;
+    font-weight: 500;
 }
 
 .explore-together h2, .exhibitions h2, .news-main-container h2, .young-scientist h2, .teachers h2, .researchers h2 {
@@ -148,10 +161,15 @@
     border-bottom: solid 0.15em var(--main-color);
 }
 
+.exhibitions-main-container h2 {
+    font-size: 3em;
+    color: var(--font-color-dark);
+}
+
 .exhibitions-main-container p, .news-main-container p {
-    font-family: Goldman, sans-serif;
-    font-size: 1.5em;
-    /* color: var(--font-color-dark); */
+    font-family: Quicksand, sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
 }
 
 .ex-img-container h3, .news-img-container h3 {
@@ -162,8 +180,6 @@
 .ex-dropdown, .news-dropdown {
     display: flex;
     flex-direction: row;
-    /* max-width: 14rem; */
-    /* background-color: var(--main-color); */
     color: var(--font-color-light);
 }
 
@@ -207,8 +223,6 @@
     background-repeat: no-repeat;
     align-items: flex-end;
     flex-wrap: wrap;
-    /* align-content: flex-end;
-    justify-content: flex-start; */
 }
 #ecology{
     background-image: linear-gradient(rgba(253, 251, 251, 0.158), rgba(208, 208, 208, 0.119)), var(--ex-img-bg-ec);
@@ -217,8 +231,6 @@
     background-repeat: no-repeat;
     align-items: flex-end;
     flex-wrap: wrap;
-    /* align-content: flex-end;
-    justify-content: flex-start; */
 }
 
 #evolution {
@@ -228,8 +240,6 @@
     background-repeat: no-repeat;
     align-items: flex-end;
     flex-wrap: wrap;
-    /* align-content: flex-end;
-    justify-content: flex-start; */
 }
 
 #book-tour {
@@ -280,11 +290,21 @@
 }
 
 
-@media screen and (max-width: 767px) {
 
-    /* .hero-banner, .young-scientist, .teachers-img-container, .researchers {
-        margin: 0;
-    } */
+/* .news-section {
+    position: relative;
+    z-index: 2;
+}
+
+.news-dropdown {
+}
+
+.audience-section {
+    z-index: 1;
+} */
+
+
+@media screen and (max-width: 767px) {
 
     .young-scientist, .teachers-img-container, .researchers {
         padding: 1rem 5%;
@@ -326,3 +346,4 @@
     }
 
 }
+

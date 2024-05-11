@@ -1,0 +1,58 @@
+
+
+
+details > summary {
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+details[open] > summary {
+    width: 20rem;
+    padding: 0;
+    text-align: top;
+
+}
+
+details > p {
+    padding: 0.5rem 1rem;
+    background-color: var(--main-color);
+    color: var(--font-color-light);
+    width: 20rem;
+    max-height: 35vh;
+    overflow: scroll;
+    position: absolute;
+    padding-bottom: 1.5rem;
+}
+
+/* For IOS devices */
+summary::-webkit-details-marker {
+    display: none;
+    width: 0.66em;
+    height: 0.66em;
+    margin-inline-end: 0.4em;
+    }
+
+details p {
+    color: var(--font-color-light);
+}
+
+
+@media screen and (max-width: 767px) {
+    details[open] > summary {
+        width: 18rem;
+        padding: 0;
+        text-align: top;
+    }
+
+    details > p {
+        padding: 0.5rem 1rem;
+        background-color: var(--main-color);
+        color: var(--font-color-light);
+        width: 18rem;
+        max-height: 50vh;
+        overflow: scroll;
+        position: absolute;
+}
+}
