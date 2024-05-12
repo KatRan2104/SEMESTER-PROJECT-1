@@ -1,7 +1,7 @@
 
 
 #hero-explore-together-banner {
-    background-image: url("../../assets/img/Phone/Rectangle.jpg");
+    background-image: url("../../assets/img/exploring-the-world.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,4 +55,11 @@
 
 .explore-together {
     border-bottom: solid 2px var(--main-color);
+}
+
+
+.get-involved-sub-container span {
+    align-self: center;
+    font-size: 4rem;
+    padding: 1rem 0 1rem 0;
 }
