@@ -82,7 +82,7 @@ details p {
 .explore-together p {
     font-family: Quicksand, sans-serif;
     padding: 0.25rem 2.5%;
-    font-size: 1.12em;
+    font-size: 1.25em;
     font-weight: 500;
 }
 
@@ -288,20 +288,6 @@ details p {
     align-items: center;
     justify-content: end;
 }
-
-
-
-/* .news-section {
-    position: relative;
-    z-index: 2;
-}
-
-.news-dropdown {
-}
-
-.audience-section {
-    z-index: 1;
-} */
 
 
 @media screen and (max-width: 767px) {
